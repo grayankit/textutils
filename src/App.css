@@ -27,6 +27,10 @@
 .App-link {
   color: #61dafb;
 }
+.testtext {
+  color: red;
+  animation: testtext-clear infinite 20s linear;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +38,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes testtext-clear {
+  from{
+    clear: right;
+  }
+  to{
+    clear: right;
   }
 }
