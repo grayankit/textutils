@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Navbar title="Textutils"/>
-    <div className="container my-20">
+    <div className="container">
     <Textarea heading="Enter your text below to analyze"/>
     </div>
     </>
