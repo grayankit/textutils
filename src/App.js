@@ -1,27 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to technicalankit
-        </p>
-        <p className='testtext'>
-          Subscribe
-        </p>
-        <a
-          className="App-link"
-          href="https://technicalankit.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Technical Ankit
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    </>
   );
 }
 
