@@ -6,17 +6,21 @@ export default function Textarea(props) {
     }
     const handleUpClick = () =>{
         let newText = text.toUpperCase();
-        setText(newText)
+        setText(newText);
+        props.showAlert("Text changed to uppercase","success")
     }
     const handleLoClick = ()=>{
         let newText = text.toLowerCase();
-        setText(newText)
+        setText(newText);
+        props.showAlert("Text changed to lowercase","success")
     }
     const handleCoClick = ()=>{
-        navigator.clipboard.writeText(text)
+        navigator.clipboard.writeText(text);
+        props.showAlert("Text copied to clipboard","success")
     }
     const clearOnClick = ()=>{
-        setText('')
+        setText('');
+        props.showAlert("Text cleared!","success")
     }
     const [text, setText] = useState('');
   return (
