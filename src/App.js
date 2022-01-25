@@ -41,7 +41,7 @@ function App() {
     <Router>
       <Navbar title="Textutils" toggleMode={toggleMode} mode={mode}/>
       <Alert alert={alert}/>
-      <div className="container">
+      <div className="container my-5">
         <Routes>
           {/* // work of exact is to route to exact path of directory */}
       {/* /users --> Component 1
